@@ -1,14 +1,7 @@
-@font-face {
-  font-family: 'CookieRun-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  color: #34495e;
+  color: #ffffff;
   transition: color 0.5s ease-in-out;
-  font-family: 'CookieRun-Regular', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -33,42 +26,47 @@ body {
 
 .showing {
   display: block;
-  text-align: right;
+  text-align: center;
 }
 
 .js-title {
-  text-align: right;
+  font-size: xxx-large;
 }
 
-
 .bgImage{
-  object-fit: cover;
   animation: fadeIn 0.5s linear;
   width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 10px 20px;
 }
 
 .item-form,
 .item-greetings { 
-  grid-column: 1/1;
-  grid-row: 2/2;
+  grid-column: 2/2;
+  grid-row: 3/3;
 
 }
 
 .item-clock  {
-  grid-column: 1/1;
-  grid-row: 1/1;
+  grid-column: 2/2;
+  grid-row: 2/2;
+  text-align: center;
 }
 
 
 .item-toDo {
   grid-column: 2/2;
-  grid-row: 2/3;
+  grid-row: 4/5;
+  text-align: center;
 }
 
 .item-bg {

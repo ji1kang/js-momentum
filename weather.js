@@ -10,7 +10,7 @@ function getWeather(lat, lng){
         console.log(json);
         const temp = json.main.temp;
         const place = json.name;
-        weather.innerText = `오늘 ${place}은 ${temp}도`;
+        weather.innerText = `${temp}@${place}`;
     });
 }
 

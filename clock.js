@@ -6,9 +6,9 @@ function getTime() {
     const min = date.getMinutes();
     const hours = date.getHours();
     const seconds = date.getSeconds();
-    colckTitle.innerText = `지금은 ${hours < 10 ? `0${hours}` : hours}시${
+    colckTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
         min < 10 ? `0${min}` : min
-    }분${seconds < 10 ? `0${seconds}` : seconds}초야`;
+    }:${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 function init() {
     getTime();

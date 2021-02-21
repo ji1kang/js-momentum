@@ -6,13 +6,13 @@ const IMG_NUMBERT = 3;
 function handleImgLoad(event){
     const image = event.target;
     newImageNumber = genRandom();
-    image.src = `images/${newImageNumber + 1}.jpeg`;
+    image.src = `images/${newImageNumber + 1}.jpg`;
 }
 
 function paintImage(imgNumber){
 
     const image = new Image();
-    image.src = `images/${imgNumber + 1}.jpeg`;
+    image.src = `images/${imgNumber + 1}.jpg`;
     image.classList.add("bgImage");
     imgContainer.appendChild(image);
     image.addEventListener("click", handleImgLoad);

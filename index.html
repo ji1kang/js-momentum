@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Something</title>
-    <meta charset="utf-8" />
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="js-clock">
+
+<head>
+  <title>Something</title>
+  <meta charset="utf-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="item-clock js-clock">
       <h1 class="js-title"></h1>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?">
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do"/>
-    </form>
-    <ul class="js-toDoList">
-    <spanc class="js-weather"></spanc>
+    <div class="item-form">
+      <form class="js-form form">
+        <input type="text" placeholder="이름을 알려줘!">
+      </form>
+    </div>
+    <div class="item-greetings">
+      <h2 class="js-greetings greetings"></h2>
+      <div class="js-bg"></div>
+    </div>
+    <div class="item-toDo">
+      <form class="js-toDoForm">
+        <h2>오늘의 할일은?</h2>
+        <input class="input-toDo" type="text" placeholder="할일을 적어보자"/>
+      </form>
+      <ul class="js-toDoList">
+    </div>
+    <div class="item-weather">
+      <h1 class="js-weather"></h1>
+    </div>
     
-    <script src="clock.js"></script>
-    <script src="todo.js"></script>
-    <script src="greeting.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
-  </body>
+  </div>
+
+  <script src="clock.js"></script>
+  <script src="todo.js"></script>
+  <script src="greeting.js"></script>
+  <script src="bg.js"></script>
+  <script src="weather.js"></script>
+  </div>
+</body>
+
 </html>

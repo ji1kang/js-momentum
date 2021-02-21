@@ -1,17 +1,20 @@
 const body = document.querySelector("body");
+const imgContainer = document.querySelector(".js-bg");
 
 const IMG_NUMBERT = 3;
 
 function handleImgLoad(event){
     const image = event.target;
-    console.log(image.src);
+    newImageNumber = genRandom();
+    image.src = `images/${newImageNumber + 1}.jpeg`;
 }
 
 function paintImage(imgNumber){
+
     const image = new Image();
     image.src = `images/${imgNumber + 1}.jpeg`;
     image.classList.add("bgImage");
-    body.appendChild(image);
+    imgContainer.appendChild(image);
     image.addEventListener("click", handleImgLoad);
 }
 
